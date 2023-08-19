@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+  <nav class=" navbar navbar-expand-lg">
+    <div class="container-fluid px-lg-5 px-sm-1">
+      <a class="display-4 fw-bold text-decoration-none text-dark" href="#">snap</a>
+
+      <div class="hamburger d-lg-none d-block">
+        <div class="hamlines"></div>
+        <div class="hamlines"></div>
+        <div class="hamlines"></div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item me-4">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <ul class="dropdown-menu border-0 shadow-lg">
+                <li><a class="dropdown-item d-flex" href="#"><span><img class="me-3" src="./images/icon-todo.svg"
+                        alt=""></span>Todo List</a></li>
+                <li><a class="dropdown-item d-flex" href="#"><span><img class="me-3" src="./images/icon-calendar.svg"
+                        alt=""></span>Calendar</a></li>
+                <li><a class="dropdown-item d-flex" href="#"><span><img class="me-3" src="./images/icon-reminders.svg"
+                        alt=""></span>Reminders</a></li>
+                <li><a class="dropdown-item d-flex" href="#"><span><img class="me-3" src="./images/icon-planning.svg"
+                        alt=""></span>Planning</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+                <span><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <ul class="dropdown-menu border-0 shadow-lg">
+                <li><a class="dropdown-item" href="#">History</a></li>
+                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link">Company</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link">About</a>
+          </li>
+        </ul>
+        <form class="d-flex align-items-center gap-4">
+          <a href="#" class="text-decoration-none text-dark">Login</a>
+          <button class="btn btn-outline-dark rounded-4 px-4 py-2">Register</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="overlay"> </div>
+    <ul class="mobileMenu ">
+      <span class="close">&times</span>
+      <div class="d-flex flex-column gap-3 align-items-start vh-100 justify-content-start py-5">
+
+        <button class="btn btnaitharrow p-0 " type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+          Features
+        </button>
+        <div class="collapse collapse-vertical" id="collapseWidthExample1">
+          <ul class="px-3 py-1 ">
+            <li><a class="dropdown-item d-flex py-1" href="#"><span><img class="me-3" src="./images/icon-todo.svg"
+                    alt=""></span>Todo List</a></li>
+            <li><a class="dropdown-item d-flex py-1" href="#"><span><img class="me-3" src="./images/icon-calendar.svg"
+                    alt=""></span>Calendar</a></li>
+            <li><a class="dropdown-item d-flex py-1" href="#"><span><img class="me-3" src="./images/icon-reminders.svg"
+                    alt=""></span>Reminders</a></li>
+            <li><a class="dropdown-item d-flex py-1" href="#"><span><img class="me-3" src="./images/icon-planning.svg"
+                    alt=""></span>Planning</a></li>
+          </ul>
+        </div>
+
+        <button class="btn btnaitharrow p-0 " type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+          Company
+        </button>
+        <div class="collapse collapse-vertical" id="collapseWidthExample2">
+          <ul class="">
+            <li><a class="dropdown-item py-1" href="#">History</a></li>
+            <li><a class="dropdown-item py-1" href="#">Our Team</a></li>
+            <li><a class="dropdown-item py-1" href="#">Blog</a></li>
+          </ul>
+        </div>
+        <li>Careers</li>
+        <li>About</li>
+        <div class="text-center d-flex flex-column w-100 gap-2">
+          <a href="#" class="text-decoration-none text-dark ">Login</a>
+          <button class="btn btn-outline-dark rounded-4 px-4 py-2">Register</button>
+        </div>
+      </div>
+    </ul>
+
+  </nav>
+
+  <div class="container mt-4">
+    <div class="wrapper d-flex flex-lg-row flex-column-reverse align-items-center justify-content-between">
+
+      <div class="leftContainer">
+        <h1>Make remote work</h1>
+        <p class="my-5 ">Get your team in sync, no matter your location. Streamline processes, create team rituals, and
+          watch
+          productivity
+          soar.</p>
+        <button class="btn mb-5 text-lg-start mx-auto text-center">Learn more</button>
+
+        <div class="clients d-flex flex-row align-items-center justify-content-between mt-5 w-100">
+          <img class="img-fluid " src="./images/client-audiophile.svg" alt="">
+          <img class="img-fluid " src="./images/client-databiz.svg" alt="">
+          <img class="img-fluid " src="./images/client-maker.svg" alt="">
+          <img class="img-fluid " src="./images/client-meet.svg" alt="">
+        </div>
+      </div>
+
+      <div class="rightContainer">
+
+        <figure class="desktop ms-auto d-none d-lg-block">
+          <img class="img-fluid" src="./images/image-hero-desktop.png" alt="">
+        </figure>
+
+        <figure class="mobile ms-auto d-block d-lg-none">
+          <img class="img-fluid" src="./images/image-hero-mobile.png" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobileMenu');
+    const close = document.querySelector('.close');
+    const overlay = document.querySelector('.overlay');
+
+    close.addEventListener("click", function () {
+      mobileMenu.style.display = "none";
+      overlay.style.display = "none"
+
+    })
+
+    hamburger.addEventListener("click", function () {
+      mobileMenu.style.display = "block";
+      overlay.style.display = "block"
+    })
+
+
+  </script>
+</body>
+
+</html>
